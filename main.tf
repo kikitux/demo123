@@ -1,9 +1,30 @@
-resource "null_resource" "null" {
+resource "null_resource" "null1" {
   
-    count = 500
+    count = 1000
   
     provisioner "local-exec" {
-      command = "env"
+      command = "id"
     }
   
   }
+
+resource "null_resource" "null2" {
+  
+    count = 1000
+  
+    provisioner "local-exec" {
+      command = "id"
+    }
+  
+  }
+
+resource "null_resource" "null3" {
+  
+    count = 1000
+  
+    provisioner "local-exec" {
+      command = "id"
+    }
+  
+  }
+
